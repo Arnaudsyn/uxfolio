@@ -20,6 +20,14 @@ body {
     font-style: normal;
 }
 
+#login-prompt
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 1005;
+}
+
 a {
     font-weight: 500;
     border-bottom: 0.5px solid;

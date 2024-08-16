@@ -12,7 +12,9 @@ var Proj5 = document.getElementById('sg-proxim');
 var Measure = document.getElementById('self-express');
 var ClosePrj = document.getElementById('BtnClose');
 var OverlayPrj = document.getElementById('overlay');
+var correctPassword = btoa("folio2024");
 function init() {
+    checkPassword();
     var greetingElement = document.getElementById('hello');
     var canvas = document.getElementById('backgroundCanvas');
     var canvasManager;
@@ -50,6 +52,19 @@ function init() {
     Proj5 === null || Proj5 === void 0 ? void 0 : Proj5.addEventListener('click', HandleClick);
     Measure === null || Measure === void 0 ? void 0 : Measure.addEventListener('click', HandleClick);
 }
+function checkPassword() {
+    var userPassword = btoa(prompt("Ce site requiert un mot de passe, entre le ci-dessous:"));
+    var MainContent = document.querySelector('main');
+    MainContent.style.display = 'none';
+    if (userPassword === correctPassword) {
+        MainContent.style.display = "block";
+        document.getElementById("login-prompt").style.display = "none";
+    }
+    else {
+        alert("Mot de passe incorrect, merci de réessayer.");
+        location.reload();
+    }
+}
 function HandleClick(e) {
     var target = e.currentTarget;
     var filePath = "".concat(target.id, ".html");
@@ -70,6 +85,7 @@ function loadProject(url) {
             // Disable scrolling
             document.body.classList.add('no-scroll');
             projectContainer.offsetWidth;
+            projectContainer.scrollTop = 0;
             projectContainer.classList.add('visible');
             history.pushState(null, '', "?project=".concat(url));
         }
