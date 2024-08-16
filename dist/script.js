@@ -53,7 +53,7 @@ function init() {
     Measure === null || Measure === void 0 ? void 0 : Measure.addEventListener('click', HandleClick);
 }
 function checkPassword() {
-    var userPassword = btoa(prompt("Ce site requiert un mot de passe, entre le ci-dessous:"));
+    var userPassword = btoa(prompt("Ce site requiert un mot de passe, entrez le ci-dessous:"));
     var MainContent = document.querySelector('main');
     MainContent.style.display = 'none';
     if (userPassword === correctPassword) {
