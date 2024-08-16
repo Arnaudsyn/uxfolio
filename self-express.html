@@ -1,0 +1,41 @@
+<div class="project-content">
+
+    <h2>Analyse d'expressions faciales et du discours</h2>
+    <span>Année : 2024 (2 semaines)</span>
+    
+    <p><h3>Contexte</h3>
+        Les tests utilisateurs qualitatifs génèrent beaucoup de données et doivent parfois être organisés dans des délais très courts sans binome. L'analyse est chronophage : il est nécessaire de revisionner plusieurs fois les vidéos, retranscrire fidèlement les verbatims et coder l'ensemble, analyser les métrics de tâches et notations, etc. Même si des outils existent pour gagner du temps, avec l'IA notamment, la fiabilité n'est pas suffisante pour obtenir une bonne qualité sans beaucoup de vérification humaine.<br>
+        Et c'est sans compter sur les biais du chercheur qui peuvent malgré tout intervenir, particulièrement si la période est faste.
+        <br><br>
+        J'ai donc créé un outil qui me permet d'analyser rapidement les expressions faciales et la tonalité du discours.
+    </p>
+
+    <p><h3>Comment ça marche ?</h3>
+        Il fonctionne d'après avec un enregistrement de l'écran utilisateur et d'une caméra dirigée sur le visage. Le logiciel OBS est ensuite utilisé pour regrouper les deux flux en une seule vidéo qui sera analysée par l'outil. L'avantage de cette méthode est que l'on peut effectuer des tests sur n'importe quelle machine : celle du designer ou du participant, il suffira dans ce cas d'une caméra amovible et d'une carte d'acquisition HDMI compatible avec n'importe quel ordinateur (ou presque).
+        <br><br>
+        Cet outil peut :
+        <ul>
+            <li>donner vue synthétique des expressions et des sentiments d'un utilisateur sur une session donnée</li>
+            <li>visualiser en temps réel sur la vidéo les pics d'expressions positives et négatives</li>
+            <li>analyser le discours pour en faire ressortir les paroles positives et négatives</li>
+        </ul>
+        Quelques écrans (non contractuels !) :
+        <br>
+        <img src="imgs/expression/express1.png" width="100%" style="margin-top: 35px; border: 0.5px solid #c9c9c9;">
+        <img src="imgs/expression/express2.png" width="100%" style="margin-top: 35px; border: 0.5px solid #c9c9c9;">
+    </p>
+
+    <p><h3>Mais pourquoi faire ?</h3>
+        Le but principal est de factualiser le travail d'analyse et ainsi réduire les biais. Par exemple : un utilisateur peut donner une bonne note de satisfaction, avoir un taux de réussite correct mais l'analyse d'expression indique beaucoup de confusion à une certaine étape. En poussant l'analyse nous pouvons voir que ces expressions se retrouvent dans une majorité des tests : cela nous donne une opportunité d'amélioration qui, sans cela, pourrait être perdue dans l'analyse macro.
+        <br>
+        Il est tout à fait adapté pour les tests A/B, de compréhension de documents ou encore d'analyse de complexité de tâches.
+        <br>
+        Enfin, il peut être utile dans le cas de tests sur des produits qui requièrent une analyse particulière de l'attention : un logiciel de surveillance bancaire ou des interfaces complexes en temps réel. Il donne la capacité à ne pas se baser uniquement sur des valeurs auto reportées qui peuvent être influées par la présence d'un modérateur.
+        <br><br>
+        L'avantage de cet outil est d'être une option à faible coût et flexible à l'usage, les solutions équivalentes du marché pouvant rapidement atteindre plusieurs centaines d'euros mensuels. De plus, c'est un gain de temps durant l'analyse pour classer et prioriser les constats.
+        <br><br>
+        La fiabilité de cet outil ne saurait remplacer des solutions de type Eye Tracking ou des mesures de type ECG pour les domaines sensibles (santé, militaires par exemple).<br>
+        Par ailleurs, il requiert aussi un consentement explicite, juridiquement valable et une politique de gestion des données personnelles robuste et transparente.
+    </p>
+
+</div>

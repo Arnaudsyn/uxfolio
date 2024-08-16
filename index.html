@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud Marquez - Lead UX</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qqt1ieg.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">Arnaud Marquez - Lead UX</div>
+        <div class="header-right">
+            <a href="#" id="lightThemeLink">Mode clair</a> / <a href="#" id="darkThemeLink">Mode sombre</a>
+        </div>
+    </header>
+
+    <div id="overlay" class="hidden"></div>
+    <div id="projectContainer" class="hidden">
+        <div id="BtnClose">Fermer</div>
+        <div id="PrjContent"></div>
+    </div>
+
+    <div id="introduction">
+        <canvas id="backgroundCanvas"></canvas>
+        <div id="HelloContent">
+            <div id="hello">Bonjour,</div>
+        <div id="mynameis">Je suis Arnaud Marquez, Lead UX designer spécialisé dans la recherche utilisateur. Faisons connaissance.</div></div>
+        </div>
+    
+    <main>
+        <nav id="Navi" class="absolute">
+            <ul>
+            Navigation
+                <li><a href="#methode" id="menu-methode">Mon approche</a></li>
+                <li><a href="#travaux" id="menu-travaux">Exemples de travaux</a></li>
+                <li style="display: none;"><a href="#exp"id="menu-experience">Expériences récentes</a></li>
+                <li><a href="#contact" id="menu-contact">Prenons contact !</a></li>
+            </ul>
+        </nav>
+
+        <section class="textContent" id="methode">
+            <h2 id="threshold">Une approche holistique, sur le modèle du business design</h2>
+            <p>Mon objectif est de comprendre les motivations, tâches à effectuer et difficultés des utilisateurs ainsi que les besoins des entreprises pour concevoir des expériences qui génèrent de la valeur à long terme. L'approche business design prend en compte la désirabilité, la faisabilité et la viabilité qui intègre les perspectives stratégiques dans le processus de conception.<br>Chaque décision design prend ainsi en compte les objectifs commerciaux et participe aux indicateurs clés de performance.</p>
+
+            <img src="imgs/graphBD-txt.png" width="100%" height="100%" alt="Business Design" id="graphBD">
+
+            <p>J'utilise une approche combinant des données qualitatives et quantitatives, en veillant à inclure les sponsors et experts du ou des domaines concernés (ex. marketing, ingénierie), offrant une vue holistique et équilibrée du problème à résoudre. Voici comment je procède :</p>
+            
+            <ul>
+                <li><b>Recherche qualitative</b> : via des entretiens approfondis, des groupes de discussion, et des observations contextuelles pour recueillir des "insights" riches et nuancés sur les comportements, motivations et difficultés des utilisateurs. Ces données aident à comprendre le « pourquoi » derrière les actions des utilisateurs et à identifier des opportunités d'amélioration souvent invisibles dans les seules données quantitatives.</li>
+                <li><b>Analyse quantitative</b> : utilisation des statistiques et analytics, des sondages à grande échelle, et des tests à distance (A/B et prototype) pour recueillir des informations mesurables sur les interactions des utilisateurs. Ces données me permettent de détecter des tendances, de tester des hypothèses et de mesurer l'impact des solutions proposées sur des métriques spécifiques.</li>
+                <li><b>Synthèse et intégration</b> : en combinant les "insights" qualitatifs et quantitatifs, je crée une vision complète et équilibrée des besoins utilisateurs et des impacts sur les objectifs business. Cela me permet de concevoir des solutions informées et stratégiques, testées avec des données robustes.</li>
+            </ul>
+
+            <p>Bien évidement, les méthodes utilisées sont adaptées en fonction des besoins : design sprint, design thinking ou sur mesure.</p>
+            
+            <p><h3>De l'importance de mesurer</h3>Très orienté sur l'analyse de données et l'usage des statistiques, j'ai dévellopé un outil d'analyse des expressions faciales et du discours pour aider à la réduction des biais et à la précision de l'analyse dans la phase critique des tests utilisateurs. Il permet, pour le moment, d'avoir la synthèse d'une session de test (valence, arousal, expressions récurrentes, etc.), les expressions en temps réel et l'analyse du discours de la session.<br><a href="javascript:;" id="self-express">Découvrir l'outil d'analyse</a></p>
+        </section>
+
+        <div id="cards" class="cards-section">
+            <h3>En résumé</h3>
+            <div class="cards-container">
+                
+                <div class="card">
+                    <span class="cardTitle">1 - Cadrage</span>
+                    <p>Identifier et aligner l'ensemble des parties prenantes sur le but du projet. Pour cela il est nécessaire de : présenter le type de démarche prévue, collecter les informations connues sur le sujet étudié, définir la "stakeholders map", créer les objectifs et mesures (business / utilisateurs) ainsi que les hypothèses à vérifier.<br>Un planning est établi avec les différents jalons sous forme de sprints agile pour donner la visibilité et les rôles de chacun(e). Une fois le protocole de recherche effectué, il est partagé avec les parties prenantes en amont.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="cardTitle">2 - Recherche</span>
+                    <p>Recherche primaire (la collecte directe) et recherche secondaire (revue de littérature, données connues) pour obtenir une vue complète du sujet. Les experts et sponsors sont rencontrés pour affiner les objectifs business et techniques.<br>L'objectif est d'avoir une représentation statistique significative, la recherche primaire sera donc le plus souvent qualitative (ateliers, entretiens, observations) et quantitative (analytics, enquêtes).</p>
+                </div>
+
+                <div class="card">
+                    <span class="cardTitle">3 - Analyse et restitution</span>
+                    <p>Les données collectés sont revues manuellement et avec l'aide des statistiques : codage du qualitatif, co-occurences, analyse thématique, emotions, etc.<br>Les artefacts design principaux sont : personas, user journeys / service blueprint, business model canvas, constats et recommandations. Le cas échéant, les EPICS et User Stories sont produites pour une phase de priorisation. Enfin, la restitution doit regrouper l'ensemble des parties prenantes afin de permettre l'alignement sur les résultats obtenus.</p>
+                </div>
+                
+                <div class="card">
+                    <span class="cardTitle">4 - Prototype</span>
+                    <p>A la suite de la priorisation, un prototype est produit pour obtenir des mesures durant la phase de test.<br>En fonction des projets, ce prototype peut être une maquette (FIGMA), une version alternative (type A/B) ou tout autre artefact qui peut être testé.<br>Ce prototype doit êgalement permettre d'obtenir des mesures précises.</p>
+                </div>
+
+                <div class="card">
+                    <span class="cardTitle">5 - Tests</span>
+                    <p>L'objectif principal de la phase de test est d'obtenir les données qui permettent une prise de décision. Pour cela, les tests seront idéalement qualitatifs (modérés) et quantitatifs (non modérés) pour une vision complète avec une analyse statistique détaillée pour s'assurer d'obtenir des résulats significatifs. Les échelles de mesures telles que le SUS/SUPRQ, NPS seront également utilisées durant les tests.<br>Le protocole de test est également partagé en amont avec les parties prenantes.</p>
+                </div>
+
+                <div class="card">
+                    <span class="cardTitle">6 - Itérations</span>
+                    <p>Les résultats des tests, qualitatifs et quantitatifs, permettent d'identifier les failles et améliorations potentielles. Ainsi, après chaque séries de tests, une restitution des performances est effectuée pour présenter les ajustements et les découvertes possibles avec les gains attendus pour la série suivante.<br>Cette étape est cruciale pour réduire les risques et calculer les projections de performances futures dans la population. Là encore, la présence de toutes les parties prenantes est essentielle dans les restitutions pour garantir la continuité d'alignement.</p>
+                </div>
+
+                <div class="card">
+                    <span class="cardTitle">7 - Implémentation</span>
+                    <p>A cette étape, il s'agit d'assurer le suivi sur : les défis techniques non anticipés qui font évoluer les User Stories, l'ajout des mesures essentielles de l'expérience utilisateur (principalement les analytics) et l'intégration.<br>Dans certains cas, des tests utilisateurs complémentaires peuvent être organisés pour vérifier les mesures précédentes.</p>
+                </div>
+
+                <div class="card">
+                    <span class="cardTitle">8 - Suivi</span>
+                    <p>Que ce soit pour une création ou une amélioration, d'un produit digital ou d'un process, l'étape de suivi permet de vérifier que la trajectoire d'expérience utilisateur et business sont conformes aux attentes. Cette étape ne se limite pas au projet mené mais sur l'ensemble des parcours pour s'assurer que les changements n'aient pas créés d'effets de bord négatifs.<br>Par ailleurs, le suivi est une activité continue qui participe à la détection de signaux faibles : surveillance des retours utilisateurs, variation de la satisfaction ou des indicateurs de performance.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="textContent" id="travaux">
+            <h2>Quelques exemples de travaux</h2>
+            <p>Les travaux présentés ci-dessous sont issus de mes missions de consultant et non soumis au secret.</p>
+
+            <div id="sg-mdw" class="project-card" style="margin-top: 50px;">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Société Générale - Digital Workplace</h3>
+                    <p>Gestion des demandes de services et d'aide informatique pour tous les collaborateurs dans le monde.</p>
+                </div>
+            </div>
+
+            <div id="bdf-webstat" class="project-card" style="display: none;">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Banque de France - Webstat</h3>
+                    <p>Refonte du portail statistique de la Banque de France.</p>
+                </div>
+            </div>
+
+            <div id="bdf-dirigeant" class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Banque de France - L'espace dirigeant</h3>
+                    <p>Concevoir la future plateforme de communication entre la Banque et les dirigeants d'entreprises.</p>
+                </div>
+            </div>
+
+            <div id="bdf-rh" class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Banque de France - Assistant RH</h3>
+                    <p>Concevoir l'assistant RH de demain avec IA générative pour tous les collaborateurs.</p>
+                </div>
+            </div>
+
+            <div id="sg-proxim" class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Société Générale - Proxim IT</h3>
+                    <p>Transformer le réseau d'espaces de dépannage d'un grand groupe bancaire international en 1 mois.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="textContent" id="exp" style="display: none;">
+            <h2>Expériences récentes</h2>
+            <p>Donec sodales finibus lacus vitae laoreet. Curabitur eget elit elit. Mauris porta purus a tempor pharetra. Donec eu sem in sapien egestas ultricies. Nulla laoreet vitae arcu eget placerat. Duis et viverra augue.</p>
+        </section>
+
+        <section class="textContent" id="contact" style="padding-bottom: 300px;">
+            <h2>Prenons contact !</h2>
+            <p>Je suis convaincu que nous avons beaucoup de choses en commun et que nous pourrions créer de très belles expériences ensemble !
+                <br><br>
+                Pour me contacter :<br>
+                Mon email : <a href="mailto:arnaud.marquez@gmail.com">arnaud.marquez@gmail.com</a><br>
+                Mon profil LinkedIn : <a href="https://www.linkedin.com/in/arnaud-marquez/" target="_blank">https://www.linkedin.com/in/arnaud-marquez/</a>
+            </p>
+        </section>
+
+    </main>
+    <script type="module" src="dist/script.js"></script>
+</body>
+</html>
