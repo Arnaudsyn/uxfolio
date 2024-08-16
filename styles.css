@@ -411,7 +411,7 @@ section {
 /* New styles for project cards */
 
 /* Medium screens */
-@media (min-width: 100px) {
+@media (max-width: 750px) {
     
     .textContent {
         margin: auto;
@@ -490,6 +490,7 @@ section {
         font-size: 0.8em;
         line-height: 1.5;
     }
+
 }
 
 /* Large screens */
