@@ -53,17 +53,19 @@ function init() {
     Measure === null || Measure === void 0 ? void 0 : Measure.addEventListener('click', HandleClick);
 }
 function checkPassword() {
-    var userPassword = btoa(prompt("Ce site requiert un mot de passe, entre le ci-dessous:"));
-    var MainContent = document.querySelector('main');
-    MainContent.style.display = 'none';
+    document.getElementById("login-prompt").style.display = "none";
+    /*const userPassword = btoa(prompt("Ce site requiert un mot de passe, entre le ci-dessous:")!);
+    const MainContent = document.querySelector('main');
+
+    MainContent!.style.display = 'none';
+
     if (userPassword === correctPassword) {
-        MainContent.style.display = "block";
-        document.getElementById("login-prompt").style.display = "none";
-    }
-    else {
+        MainContent!.style.display = "block";
+        document.getElementById("login-prompt")!.style.display = "none";
+    } else {
         alert("Mot de passe incorrect, merci de réessayer.");
         location.reload();
-    }
+    }*/
 }
 function HandleClick(e) {
     var target = e.currentTarget;
