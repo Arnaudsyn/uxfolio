@@ -14,7 +14,8 @@ var ClosePrj = document.getElementById('BtnClose');
 var OverlayPrj = document.getElementById('overlay');
 var correctPassword = btoa("folio2024");
 function init() {
-    checkPassword();
+    //checkPassword();
+    document.getElementById("login-prompt").style.display = "none";
     var greetingElement = document.getElementById('hello');
     var canvas = document.getElementById('backgroundCanvas');
     var canvasManager;
