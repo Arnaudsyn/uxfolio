@@ -39,11 +39,14 @@ export function setTheme(theme) {
     var canvas = document.getElementById('backgroundCanvas');
     var BtnLight = document.getElementById('lightThemeLink');
     var BtnDark = document.getElementById('darkThemeLink');
+
     if (theme === "dark") {
         body.classList.add('darkTheme');
         body.classList.remove('liteTheme');
         BtnDark.classList.add('lnk-active');
         BtnLight.classList.remove('lnk-active');
+
+        //trace (BtnDark);
     }
     else {
         body.classList.add('liteTheme');
