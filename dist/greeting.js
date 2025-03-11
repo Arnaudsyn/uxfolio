@@ -45,8 +45,6 @@ export function setTheme(theme) {
         body.classList.remove('liteTheme');
         BtnDark.classList.add('lnk-active');
         BtnLight.classList.remove('lnk-active');
-
-        //trace (BtnDark);
     }
     else {
         body.classList.add('liteTheme');
